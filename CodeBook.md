@@ -22,23 +22,23 @@ Shown for each study subject (30) the six activity labels in rows and in columns
 
 Here is the list of resulting columns in the tidydata.csv file.
 
- 1. label
+1. label
     - Values:
-        LAYING
-        SITTING
-        STANDING
-        WALKING
-        WALKING_DOWNSTAIRS
-        WALKING_UPSTAIRS
- 2. subject 
+        - LAYING
+        - SITTING
+        - STANDING
+        - WALKING
+        - WALKING_DOWNSTAIRS
+        - WALKING_UPSTAIRS
+2. subject 
     - Values: from 1 to 30 
- 3. tBodyAccMeanX
- 4. tBodyAccMeanY
- 5. tBodyAccMeanZ
- 6. tBodyAccStdX
- 7. tBodyAccStdY
- 8. tBodyAccStdZ
- 9. tGravityAccMeanX
+3. tBodyAccMeanX
+4. tBodyAccMeanY
+5. tBodyAccMeanZ
+6. tBodyAccStdX
+7. tBodyAccStdY
+8. tBodyAccStdZ
+9. tGravityAccMeanX
 10. tGravityAccMeanY
 11. tGravityAccMeanZ
 12. tGravityAccStdX
