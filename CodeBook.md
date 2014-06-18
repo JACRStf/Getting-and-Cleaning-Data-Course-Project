@@ -1,6 +1,6 @@
 Tidy data set
 
-Shown for each study subject (30) the six activity labels in rows and in columns the mean value (Mean) and standard deviation (std)  for the set of variables that were estimated from these signals:
+Shown for each study subject (30) the six activity labels in rows and in columns the mean value (Mean) and standard deviation value (Std) estimated from these signals:
 
   - tBodyAcc-XY
   - tGravityAcc-XYZ
