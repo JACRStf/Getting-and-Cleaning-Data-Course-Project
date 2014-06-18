@@ -1,13 +1,16 @@
 library(data.table)
 
+#Step 1: "Merges the training and the test sets to create one data set."
 # Read the data
 # Set working directory for files ZIP location
 setwd("~/Documents/CourseraWorkingFiles/R Programing/Geting and Cleansing Data/UCI HAR Dataset")
 
 # Get the features
 feature.tble <- read.table('./features.txt', col.names = c('index', 'name')) #imports features.txt
-features <- subset(feature.tble, grepl('-(mean|std)[(]', feature.tble$name)) 
 
+#Step 2: "Extracts only the measurements on the mean and standard deviation for each measurement."
+features <- subset(feature.tble, grepl('-(mean|std)[(]', feature.tble$name)) 
+#Step 3: "Uses descriptive activity names to name the activities in the data set."
 # Get the labels
 label.tble <- read.table('./activity_labels.txt', col.names = c('level', 'label')) #imports activity_labels.txt
 
@@ -21,6 +24,8 @@ dtaset <- rbind(train.dtaset, test.dtaset)
 
 # Generate the tidy data set
 tidy.dtaset <- dtaset[, lapply(.SD, mean), by=list(label, subject)]
+
+#Step 4: "Appropriately labels the data set with descriptive activity names." 
 # Fix the variable names
 names <- names(tidy.dtaset)
 names <- gsub('-mean', 'Mean', names) # Replace `-mean' by `Mean'
@@ -32,6 +37,7 @@ setnames(tidy.dtaset, names)
 # Write the raw and the tidy data sets to files
 setwd('..')
 write.csv(dtaset, file = 'rawdata.csv', row.names = FALSE)
+#Step 5: "Creates a second, independent tidy data set with the average of each variable for each activity and each subject."
 write.csv(tidy.dtaset, file = 'tidydata.csv', row.names = FALSE, quote = FALSE)
 
 
