@@ -20,6 +20,13 @@ Shown for each study subject (30) the six activity labels in rows and in columns
   - fBodyGyroMag
   - fBodyGyroJerkMag
 
+The following adjusment have been made to the original signals description in order to satisfy the tidy data requirements:
+
+  - Replace -mean with Mean
+  - Replace -std with Std
+  - Remove characters -()
+  - Replace BodyBody with Body
+
 Here is the list of resulting columns in the tidydata.csv file.
 
 1. label
