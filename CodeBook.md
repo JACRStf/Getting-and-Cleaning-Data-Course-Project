@@ -105,3 +105,4 @@ Here is the list of resulting columns in the tidydata.csv file.
 66. fBodyGyroMagStd
 67. fBodyGyroJerkMagMean
 68. fBodyGyroJerkMagStd
+

@@ -5,7 +5,7 @@ library(data.table)
 # Set working directory for files ZIP location
 setwd("~/Documents/CourseraWorkingFiles/R Programing/Geting and Cleansing Data/UCI HAR Dataset")
 
-# Get the features
+# Get the features.
 feature.tble <- read.table('./features.txt', col.names = c('index', 'name')) #imports features.txt
 
 #Step 2: "Extracts only the measurements on the mean and standard deviation for each measurement."

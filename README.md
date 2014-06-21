@@ -24,4 +24,3 @@ The run_analysis.R has a function named crt.dtaset used to load and process eith
 The run_analysis.R creates a rawdata.csv file with the merge of training and test set no descriptive names and tidydata.csv with descriptive names.
 
 
-
