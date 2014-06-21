@@ -19,7 +19,9 @@ The R script called run_analysis.R does the following:
 4. Appropriately labels the data set with descriptive variable names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-The run_analysis.R has a function named crt.dtaset used to load and process either a train or a test data set. And creates a rawdata.csv file with the merge of training and test set no descriptive names and tidydata.csv with descriptive names.
+The run_analysis.R has a function named crt.dtaset used to load and process either a train or a test data set. 
+
+The run_analysis.R creates a rawdata.csv file with the merge of training and test set no descriptive names and tidydata.csv with descriptive names.
 
 
 
