@@ -41,7 +41,7 @@ write.csv(dtaset, file = 'rawdata.csv', row.names = FALSE)
 write.csv(tidy.dtaset, file = 'tidydata.csv', row.names = FALSE, quote = FALSE)
 
 
-# The function loads and processes either a train or a test data set,
+# The function loads and processes either a train or a test data set
 crt.dtaset <- function (set, features, labels) {
   # Construct the relative pathes of data files
   prefix <- paste(set, '/', sep = '')
